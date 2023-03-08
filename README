@@ -1,0 +1,39 @@
+This practice respository is for practicing my HTML, CSS, and JavaScript
+
+
+Clone remote to local repository
+In GitHub:
+
+Select the <> Code link.
+Select the green Code button.
+Ensure HTTPS is selected and click the copy button to copy the remote repository URL.
+In Git Bash (Windows) or Terminal (Mac, Linux)
+
+Navigate to the folder where the repository should be cloned into.
+Issue the git clone command followed by pasting the previously copied remote repository URL.
+Change directory to the newly created repository folder. (Folder name is the same as the remote repository name)
+Set your user name and email using the git config command. E.g. git config user.name "your name" and git config user.email "your email address".
+Check that the correct username and email is set using the git config -l command.
+Setting and checking user.name and user.email must to be done every time the remote repository is cloned to a local repository.
+Create a develop branch. (Only needs to be done once in a repository.)
+
+Create a branch named develop off the main branch. E.g. git branch develop
+Switch to the develop branch. E.g. git checkout develop
+Push the branch to the remote repository. E.g. git push -u origin develop Creation of files should not start until the develop branch has been pushed to the remote repository.
+Edit this README.md file, then at the top,
+replace the word ReplaceCourseNumber with the course number
+replace the word ReplaceProjectName with the name of the project
+replace the word ReplaceFullName with
+replace the word ReplaceCurrentDateTime with the current date/time (E.g., Monday January 10, 2022 @ 11:45 AM).
+Save the changes.
+Stage the changes. E.g. git add README.md
+Commit the changes. E.g. git commit -m "Replaced course, project, name and date"
+Push the changes to the remote repository. E.g. git push
+Merge the develop branch to the main branch.
+
+Switch to the main branch. E.g. git checkout main
+Merge the develop branch into the main branch. E.g. git merge develop
+Push the changes to the remote repository. E.g. git push
+Switch to the develop branch. E.g. git checkout develop
+Read the content of this README.md file.
+
